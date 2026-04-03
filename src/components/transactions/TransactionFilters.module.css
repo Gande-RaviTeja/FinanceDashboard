@@ -1,0 +1,86 @@
+.filterContainer {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-xl);
+  transition: all 0.3s ease;
+}
+
+.filtersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.input,
+.select {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input::placeholder {
+  color: var(--gray-400);
+}
+
+.resetButton {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resetButton:hover {
+  background-color: var(--border-color);
+  border-color: var(--text-secondary);
+}
+
+.resetButton:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .filterContainer {
+    padding: var(--spacing-md);
+  }
+
+  .filtersGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .resetButton {
+    width: 100%;
+  }
+}

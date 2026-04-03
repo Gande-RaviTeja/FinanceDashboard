@@ -1,0 +1,30 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mainContent {
+  flex: 1;
+  padding: var(--spacing-xl) 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
