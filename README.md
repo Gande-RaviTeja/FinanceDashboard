@@ -61,26 +61,6 @@ The app will open at `http://localhost:5173` (or the next available port)
 
   Project Structure
 
-
-src/
-├── components/
-│   ├── common/               Shared components (Header, RoleSelector, EmptyState)
-│   ├── dashboard/            Dashboard page (SummaryCards, Charts)
-│   ├── transactions/         Transactions page (Table, Filters, Modal)
-│   └── insights/             Insights page (InsightCards, Analytics)
-├── context/
-│   └── DataContext.jsx       Global state with reducer
-├── hooks/
-│   ├── useTransactions.js    Transaction filtering & search logic
-│   ├── useInsights.js        Insight computation
-│   └── useRoleAccess.js      Role-based permissions
-├── data/
-│   └── mockTransactions.js   45+ realistic mock transactions
-├── styles/
-│   └── globals.module.css    Global CSS variables & utilities
-└── App.jsx                   Main app component with routing
-
-
   Key Components
 
  Dashboard (`Dashboard.jsx`)
